@@ -30,6 +30,7 @@
 
 body {
     font-family: Arial, sans-serif;
+	font-size: 16px;
     background-image: url('pasta.jpg');
     background-size: cover; /* Copre l'intera pagina */
     background-position: center;
@@ -46,6 +47,7 @@ body {
 input, select {
     width: 100%; 
     padding: 10px;
+	font-size: 1em;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -61,15 +63,16 @@ h1 {
     color: #e74c3c;
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2.5em;
+    font-size: 2em;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .container {
-	max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #fff;
+	max-width: 90%;
+    width: 100%;
+    margin: 20px auto;
+    padding: 5%;
+    background-color: rgba(200, 200, 200, 0.95);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -89,6 +92,7 @@ form {
 
 label, button {
     margin-bottom: 10px;
+	font-size: 1em;
 }
 
 button {
@@ -112,3 +116,16 @@ button:hover {
     color: #333;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
