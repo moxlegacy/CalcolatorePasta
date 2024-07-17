@@ -1,19 +1,84 @@
+.quote-container {
+    background-color: #f9f9f9;
+    border-left: 5px solid #e74c3c;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
+.quote footer {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.quote p {
+  margin-bottom: 10px;
+}
+
+
+.quote cite {
+  font-style: normal;
+  font-weight: bold;
+}
+
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('pasta.jpg');
+    background-size: cover; /* Copre l'intera pagina */
+    background-position: center;
+    background-attachment: fixed; /* Lo sfondo rimane fisso durante lo scorrimento */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+	line-height: 1.6;
+    color: #333;
+}
+
+input, select {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Includiamo padding e bordo nella larghezza */
+}
+
+/* Stile specifico per il select del tipo di pasta */
+select#tipoPasta {
+    width: 100%; /* Questo select occuperà l'intera larghezza */
+}
+
+h1 {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .container {
+	max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+	transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -22,21 +87,23 @@ form {
     gap: 10px;
 }
 
-label, input, select, button {
+label, button {
     margin-bottom: 10px;
 }
 
 button {
-    padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
+    padding: 12px 20px;
+    background-color: #e74c3c;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #c0392b;
 }
 
 #risultato {
@@ -44,3 +111,4 @@ button:hover {
     font-size: 1.2em;
     color: #333;
 }
+
