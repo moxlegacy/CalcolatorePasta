@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore di Pasta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcolatore di Pasta</h1>
+        <form id="pastaForm">
+            <label for="tipoPasta">Tipo di pasta:</label>
+            <select id="tipoPasta" required>
+                <option value="2.0">Pasta di semola corta</option>
+                <option value="2.4">Pasta di semola lunga</option>
+                <option value="3.0">Pasta all'uovo secca</option>
+				<option value="2.5">Riso</option>
+            </select>
+
+            <label for="pesoPastaSeccaTotale">Quanta pasta hai messo?</label>
+            <input type="number" id="pesoPastaSeccaTotale" required>
+
+            <label for="pesoTotalePadella">Quanto pesa tutta la pasta?</label>
+            <input type="number" id="pesoTotalePadella" required>
+
+            <label for="grammiPastaSecca">Quanta pasta devi mangiare?</label>
+            <input type="number" id="grammiPastaSecca" required>
+
+            <button type="button" onclick="calcolaPorzione()">Calcola</button>
+        </form>
+        <p id="risultato"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
